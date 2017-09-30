@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. $HOME/.local/pmgr
+
+for p in $@; do
+    if [ -d "$PHOME/$p" ]; then
+        mkdir -p $PHOME/$p
+    fi
+done
+
