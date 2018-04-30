@@ -45,6 +45,10 @@ show_git_head() {
     git show -p --pretty="tformat:"
 }
 
+push_origin_branch() {
+    git push origin $(git rev-parse --abbrev-ref HEAD)
+}
+
 pretty_git_log() {
     git log --graph --pretty="tformat:${FORMAT}" $* |
         # Replace (2 years ago) with (2 years)
