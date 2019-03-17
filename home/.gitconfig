@@ -18,8 +18,8 @@
     noff = merge --no-ff
     fa = fetch --all
     pom = push origin master
-    pob = "!. ~/githelpers && push_origin_branch"
-    pobf = "!. ~/githelpers && push_origin_branch --force"
+    pob = "!. ~/.githelpers && push_origin_branch"
+    pobf = "!. ~/.githelpers && push_origin_branch --force"
     b = branch
     ds = diff --stat=160,120
     dh1 = diff HEAD~1
