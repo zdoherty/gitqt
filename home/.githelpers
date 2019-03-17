@@ -46,7 +46,7 @@ show_git_head() {
 }
 
 push_origin_branch() {
-    git push origin $(git rev-parse --abbrev-ref HEAD)
+    git push origin $(git rev-parse --abbrev-ref HEAD) $@
 }
 
 pretty_git_log() {

@@ -1,8 +1,8 @@
 [user]
-    name = Zack Doherty
-    email = zack.doherty@gotinder.com
+    name = 
+    email = 
 [github]
-    user = zdoherty
+    user = 
 [color]
     ui = auto
 [alias]
@@ -18,7 +18,8 @@
     noff = merge --no-ff
     fa = fetch --all
     pom = push origin master
-    pob = "!. ~/.githelpers && push_origin_branch"
+    pob = "!. ~/githelpers && push_origin_branch"
+    pobf = "!. ~/githelpers && push_origin_branch --force"
     b = branch
     ds = diff --stat=160,120
     dh1 = diff HEAD~1
