@@ -49,6 +49,7 @@ push_origin_branch() {
     git push origin $(git rev-parse --abbrev-ref HEAD) $@
 }
 
+# credit to Gary Bernhardt for this amazing function: https://github.com/garybernhardt/dotfiles/blob/master/.githelpers
 pretty_git_log() {
     git log --graph --pretty="tformat:${FORMAT}" $* |
         # Replace (2 years ago) with (2 years)
